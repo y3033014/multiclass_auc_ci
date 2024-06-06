@@ -1,9 +1,0 @@
-setup.py
-multiclass_auc_ci/__init__.py
-multiclass_auc_ci/all_type_ci.py
-multiclass_auc_ci/calc_ci.py
-multiclass_auc_ci/multiclass_auc_ci.py
-multiclass_auc_ci.egg-info/PKG-INFO
-multiclass_auc_ci.egg-info/SOURCES.txt
-multiclass_auc_ci.egg-info/dependency_links.txt
-multiclass_auc_ci.egg-info/top_level.txt
