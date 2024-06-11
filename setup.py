@@ -5,25 +5,39 @@ DESCRIPTION = "multiclass_auc_ci: Calculate multiclass auc confidence interval"
 NAME = "multiclass_auc_ci"
 AUTHOR = "Yuta INOUE"
 AUTHOR_EMAIL = "inoue.yuta.d9@s.gifu-u.ac.jp"
-URL = "https://github.com/" #githubURL、本番は何を書く？自分のメールアドレスのアカウント？学校のメールアドレスで新しく作る？
-LICENSE = "" #ライセンスかな？本番は何になるんだろう
-DOWNLOAD_URL = URL
+URL = "https://github.com/y3033014/multiclass_auc_ci" #githubURL、本番は何を書く？自分のメールアドレスのアカウント？学校のメールアドレスで新しく作る？
+LICENSE = "BSD 3-Clause" #ライセンスかな？本番は何になるんだろう
+DOWNLOAD_URL = "https://github.com/y3033014/multiclass_auc_ci"
 VERSION = multiclass_auc_ci.__version__
-PYTHON_REQUIRES = ">=3.6" #pythonの必要なバージョンかな。これも調べる
+PYTHON_REQUIRES = ">=3.11" #pythonの必要なバージョンかな。これも調べる
 INSTALL_REQUIRES = [
-    "pytz>=2020.1" #依存するパッケージの情報。必要なバージョンとかね。
+    "openpyxl>=3.1.2", #依存するパッケージの情報。必要なバージョンとかね。
+    "numpy>=1.26.2",
+    "scipy>=1.13.0",
+    "scikit-learn>=1.4.2"
 ]
 PACKAGES = [
     "multiclass_auc_ci" #パッケージ情報
 ]
-KEYWORDS = "" #検索でヒットさせたいキーワード
+KEYWORDS = "multiclass auc confidence interval" #検索でヒットさせたいキーワード
 CLASSIFIRES = [
-    "" #分類情報(ライセンス情報とプログラミング言語を記載)
-    ""
+    "License :: OSI Approved :: BSD License", #分類情報(ライセンス情報とプログラミング言語を記載)
+    "Programming Language :: Python :: 3.11"
 ]
 
 setup(
     name="multiclass_auc_ci",
+    author=AUTHOR,
+    author_email=AUTHOR_EMAIL,
+    maintainer=AUTHOR,
+    maintainer_email=AUTHOR_EMAIL,
+    description=DESCRIPTION,
+    license=LICENSE,
+    url=URL,
     version=VERSION,
-    packages=find_packages()
+    download_url=DOWNLOAD_URL,
+    python_requires=PYTHON_REQUIRES,
+    install_requires=INSTALL_REQUIRES,
+    packages=PACKAGES,
+    classifiers=CLASSIFIRES
 )
