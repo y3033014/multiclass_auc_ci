@@ -48,12 +48,12 @@ def auc_ci_select(auc_type,confidence_type,resample_num,label,score,random_seed,
 def multiclass_auc_ci(
     auc_type, #"macro" or "weighted" or "micro" or "handtill"
     confidence_type, #"normal" or "percentile"
-    alpha, #0～1
     resample_num,
     example = None, #1～12
     label = None,
     score = None,
     random_seed = None,
+    alpha = 0.95, #0～1
     digit = 0.0001
 ):
     if example is None and (score is None or label is None):
