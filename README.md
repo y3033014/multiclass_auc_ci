@@ -34,6 +34,6 @@ print(f"macro auc confidence interval = [{lower} - {upper}]")
 |resample_num|Required|int|-|Nmber of resampling times|
 |example|Optional|int|None|Whether to use the data provided,1~12|
 |label|Optional|array of shape(number of data)|None|True label|
-|score|Optional|array of shepe((number of data),(number of class))|None|Target scores|
+|score|Optional|array of shape((number of data),(number of class))|None|Target scores|
 |random_seed|Optional|int|None|Random seed|
 |digit|Optional|float|0.0001|Number of display digits|
