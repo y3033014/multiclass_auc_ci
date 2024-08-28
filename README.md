@@ -32,10 +32,10 @@ print(f"macro auc confidence interval = [{lower} - {upper}]")
 |confidence_type|Required|str|-|"normal" or "percentile"|
 |alpha|Required|float|-|Confidence rate of confidence interval|
 |resample_num|Required|int|-|Nmber of resampling times|
-|example|Optional|int|None|Whether to use the data provided,1~12|
-|label|Optional|array of shape(number of data)|None|True label|
-|score|Optional|array of shape((number of data),(number of class))|None|Target scores|
+|example[^1]|Optional|int|None|Whether to use the data provided,1~12|
+|label[^1]|Optional|array of shape(number of data)|None|True label|
+|score[^1]|Optional|array of shape((number of data),(number of class))|None|Target scores|
 |random_seed|Optional|int|None|Random seed|
 |digit|Optional|float|0.0001|Number of display digits|
 <br>
-Either example or score and label must be entered
+[^1]: Either example or score and label must be entered
