@@ -37,5 +37,4 @@ print(f"macro auc confidence interval = [{lower} - {upper}]")
 |score|Optional|array of shape((number of data),(number of class))|None|Target scores|
 |random_seed|Optional|int|None|Random seed|
 |digit|Optional|float|0.0001|Number of display digits|
-<br>
 **Either example or score and label must be entered**
